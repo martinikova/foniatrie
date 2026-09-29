@@ -1,0 +1,143 @@
+<html lang="cs">
+<head>
+  <meta charset="UTF-12">
+  <title>E-Postery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:800,500" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: ##B07F13;
+      overflow: hidden;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+    }
+
+    .scale-container {
+      width: 1250px;       /* container width */
+      padding: 0 px;     /* 10px borders on left and right */
+      margin-top: 50px;    /* move container lower */
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: rgb(0, 53, 71);
+      font-size: 3em;
+      text-align: center;
+      margin: 70px 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+    }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+  /* gets taller as screen gets narrower */
+  grid-auto-rows: calc(30rem - 8vw);
+
+  row-gap: 20px;
+  column-gap: 20px;
+
+  width: 100%;
+  margin-top: 20px;
+}
+.rectangle {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+.free-rectangle {
+      background-color: transparent;
+
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      position: relative;
+}
+.rectangle h2 {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 30px;
+  line-height: 1.15;
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  white-space: normal;
+}
+
+.rectangle p {
+  margin: 0;
+
+  font-size: 26px;
+  line-height: 1.2;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;   /* allow up to 2 lines */
+  -webkit-box-orient: vertical;
+}
+.corner-image1 {
+    position: absolute; /* Allows the image to be placed anywhere on the page */
+    top: 25px; /* Distance from the bottom */
+    left: 10px; /* Distance from the right */
+    width: 320px; /* Adjust the size of the image */
+    height: auto;
+}
+.corner-image2 {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+
+  /* bottom-right alignment */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+
+}
+.corner-image3 {
+    position: absolute; /* Allows the image to be placed anywhere on the page */
+    top: 20px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    width: 600px; /* Adjust the size of the image */
+    height: auto;
+    padding: 2px;
+    background-color: white;
+}
+.corner-image4 {
+    position: absolute; /* Allows the image to be placed anywhere on the page */
+    top: 20px; /* Distance from the bottom */
+    left: 10px; /* Distance from the right */
+    width: 510px; /* Adjust the size of the image */
+    height: auto;
+}
+  </style>
+</head>
