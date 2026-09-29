@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Language" content="cs">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Postery</title>
+  <meta name="timezone" content="UTC-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+        .overlay-button {
+      position: absolute;
+      bottom: 5vh;           /* 5% from top of viewport */
+      right: 2vw;          /* 2% from left of viewport */
+      z-index: 2;         /* above the iframe */
+      padding: 1vh 1vw;   /* scales with viewport */
+      font-size: 2.5vh;   /* scales with viewport height */
+      background-color: rgba(255, 0, 0, 1);
+      color: white;
+      text-decoration: none;
+      border-radius: 1vh; 
+      font-weight: bold;
+      min-width: 4vw;    
+      text-align: center;
+    }
+
+    img {
+      height: 100vh;       /* full viewport height */
+      width: auto;         /* maintain aspect ratio */
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+ <div style="position: relative; z-index: 1;">
+  <img src="1.png" alt="E-Postery Image">
+  </div>
+    <a href="index.html" class="overlay-button">ZPĚT</a>
+</body>
+</html>
